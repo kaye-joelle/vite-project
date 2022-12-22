@@ -14,15 +14,20 @@
       <button data-tabId="page1">page1</button>
       <button data-tabId="page2">page2</button>
       <button data-tabId="page2">page3</button>
-      <p>Filtrer par:
-        <select id="cars" name="cars">
-          <option value="species">Species</option>
-          <option value="gender">Gender</option>
-          <option value="name">Name</option>
 
+      <label>Please choose one or more pets:
+        <select name="results" multiple size="4">
+          <option value="species">Species</option>
+          <optgroup label="Gender" value="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="genderless">Genderless</option>
+            <option value="unknown">Unknown</option>
+          </optgroup>
+            <option value="name">Name</option>
         </select>
-      </p>
-    
+      </label>
+      
     </header>
     <div id="app"></div>
     <template id="listOfElement">
