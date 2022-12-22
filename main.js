@@ -1,12 +1,12 @@
 import ListOfPost from './src/pages/ListOfPost'
-import ListOfUser from './src/pages/ListOfUser'
+import ListOfCharacter from './src/pages/ListOfCharacter'
 import TabManager from './src/utils/TabManager'
 
 const rootElement = document.querySelector('#app')
 
 const tabManager = new TabManager(rootElement, {
   page1: {
-    component: ListOfUser,
+    component: ListOfCharacter,
     params: [1, 'hello']
   },
   page2: {
