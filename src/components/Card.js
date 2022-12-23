@@ -7,7 +7,7 @@ const Card = ({ text = 'Bonjour', src, tagName = 'div' } = {}) => createElement(
       {
         tagName: 'img',
         attributes: {
-          src: src || 'https://via.placeholder.com/150'
+          src: src || 'https://via.placeholder.com/300'
         }
       },
       {

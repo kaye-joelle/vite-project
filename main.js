@@ -1,12 +1,14 @@
 import ListOfPost from './src/pages/ListOfPost'
-import ListOfUser from './src/pages/ListOfUser'
+import ListOfCharacter from './src/pages/ListOfCharacter'
 import TabManager from './src/utils/TabManager'
 
 const rootElement = document.querySelector('#app')
+const searchElement = document.querySelector('#searchCharacter')
+
 
 const tabManager = new TabManager(rootElement, {
   page1: {
-    component: ListOfUser,
+    component: ListOfCharacter,
     params: [1, 'hello']
   },
   page2: {
@@ -15,11 +17,14 @@ const tabManager = new TabManager(rootElement, {
   }
 })
 
-
 document.querySelectorAll('[data-tabId]').forEach(element => {
   element.addEventListener('click', () => {
-    tabManager.openTabById(element.getAttribute('data-tabId'))
+    tabManager.openTabByID(element.getAttribute('data-tabId'))
+  })
+
+searchElement.addEventListener('input', () => {
+  tabManager.openTabByID(element.getAttribute('data-tabId'), searchElement.value)
   })
 })
 
-tabManager.openTabById('page1')
+tabManager.openTabByID('page1')
