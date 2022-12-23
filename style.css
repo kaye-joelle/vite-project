@@ -31,14 +31,14 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 1.10em;
   line-height: 1.1;
 }
 
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 50px;
   text-align: center;
   /* display: flex;
   flex-flow: row wrap;
@@ -78,11 +78,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color:transparent;
   cursor: pointer;
   transition: border-color 0.25s;
   color:white;
-  border:1px solid white;
+  
+ 
   margin-left:10%;
 }
 
@@ -92,6 +93,7 @@ button:focus-visible {
 }
 button:not(:disabled){
   margin-right: 30px;
+  font-size: 1.25em;
 }
 
 /* @media (prefers-color-scheme: light) {
@@ -107,12 +109,13 @@ button:not(:disabled){
   }
 } */
 #header{
-  background-color: white;
+  background-color: rgba(107, 243, 16, 0.371);
   display: flex;
   justify-content: center;
 }
 input#searchCharacter {
   margin:0 0 0 auto;
+  border:1px solid lightgrey;
+  border-radius: 10 px;
 }
-
 

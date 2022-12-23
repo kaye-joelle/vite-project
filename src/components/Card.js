@@ -14,6 +14,7 @@ const Card = ({ text = 'Bonjour', src, tagName = 'div', classList ='card'} = {})
       },
       {
         tagName: 'p',
+        classList: 'card-title',
         text,
       },
     ]
