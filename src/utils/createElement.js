@@ -3,7 +3,7 @@ const createElement = ({ tagName, ...rest }) => {
   const element = document.createElement(tagName);
 
   if ('classList' in rest) {
-    element.classList.add(...rest.classList);
+    element.classList.add(rest.classList);
   }
 
   if ('text' in rest) {
