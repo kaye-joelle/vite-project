@@ -7,6 +7,7 @@ export default function ListCard(arrayOfElement) {
   
   arrayOfElement.forEach(e => {
     element.querySelector('div').appendChild(Card(e))
+    
   });
 
   return element

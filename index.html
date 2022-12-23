@@ -10,30 +10,27 @@
     <title>Vite App</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <button data-tabId="page1">page1</button>
       <button data-tabId="page2">page2</button>
-      <button data-tabId="page2">page3</button>
-
-      <label>Please choose one or more pets:
-        <select name="results" multiple size="4">
+      <!-- <button data-tabId="page2">page3</button> -->
+      <!-- <button data-tabId="page2">page4</button> -->
+ 
+        <!-- <select id="cars" name="cars">
           <option value="species">Species</option>
-          <optgroup label="Gender" value="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="genderless">Genderless</option>
-            <option value="unknown">Unknown</option>
-          </optgroup>
-            <option value="name">Name</option>
-        </select>
-      </label>
-      
+          <option value="gender">Gender</option> 
+          <option value="name">Name</option>
+
+        </select> -->
+     
+      <input type="text" id="searchCharacter" placeholder="Recherche">
+
     </header>
-    <div id="app"></div>
+    <section id="app"></section>
     <template id="listOfElement">
-      <div>
+      <div class="gallery">
       </div>
     </template>
     <script type="module" src="/main.js"></script>
   </body>
-</html>
+</html> 
